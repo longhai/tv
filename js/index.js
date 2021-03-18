@@ -200,10 +200,10 @@ function videojsLoad(sourceOverlay,channel) {
 
   let contentType,techOrder,pictureInPictureToggle,credentials = false,playerOptions,player;
 
-  if (hlsVideoUrl.indexOf('cdn2.epub.fun') !== -1) {
-    hlsVideoUrl = hlsVideoUrl.replace('https://cdn2.epub.fun','http://hbo.epub.fun');
-  } else if (hlsVideoUrl.indexOf('cdn2.epub.fun') !== -1) {
-    hlsVideoUrl = hlsVideoUrl.replace('cdn2.epub.fun','stream2.epub.fun');
+  if (hlsVideoUrl.indexOf('cdn4.epub.fun') !== -1) {
+    hlsVideoUrl = hlsVideoUrl.replace('https://cdn4.epub.fun','http://hbo.epub.fun');
+  } else if (hlsVideoUrl.indexOf('cdn5.epub.fun') !== -1) {
+    hlsVideoUrl = hlsVideoUrl.replace('cdn5.epub.fun','stream5.epub.fun');
   }
 
   if (hlsVideoUrl.indexOf('epub.fun') !== -1)   {
@@ -935,28 +935,28 @@ function appendList(channel,appendSourceName,sourceLane) {
     channelListItem.appendChild(channelSup);
   }
   switch (channel.chnl_cat) {
-    case 'HD Telecom':
+    case '高清电信':
       myList1.appendChild(channelListItem);
       break;
-    case 'HD Unicom':
+    case '高清联通':
       myList1a.appendChild(channelListItem);
       break;
-    case 'SD':
+    case '标清':
       myList2.appendChild(channelListItem);
       break;
-    case 'Camera quan sát':
+    case '央视':
       myList3.appendChild(channelListItem);
       break;
-    case 'Truyền hình vệ tinh':
+    case '卫视':
       myList4.appendChild(channelListItem);
       break;
-    case 'địa phương':
+    case '地方':
       myList5.appendChild(channelListItem);
       break;
-    case 'nghề nghiệp':
+    case '专业':
       myList8.appendChild(channelListItem);
       break;
-    case 'Link':
+    case '港澳台':
       myList10.appendChild(channelListItem);
       break;
     default:
