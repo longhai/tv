@@ -929,7 +929,7 @@ function appendList(channel,appendSourceName,sourceLane) {
     channelListItem.setAttribute('data-rate',channel.chnl_rate);
   }
   channelListItem.appendChild(channelListText);
-  if (channel.chnl_cat.indexOf('高清') === -1) {
+  if (channel.chnl_cat.indexOf('HD') === -1) {
     const channelSup = document.createElement('sub');
     channelSup.textContent = sourceLane;
     channelListItem.appendChild(channelSup);
@@ -939,24 +939,30 @@ function appendList(channel,appendSourceName,sourceLane) {
       myList1.appendChild(channelListItem);
       break;
     case 'VTC':
-      myList1a.appendChild(channelListItem);
-      break;
-    case 'VTCcab':
       myList2.appendChild(channelListItem);
       break;
-    case 'HTV':
+    case 'VTCcab':
       myList3.appendChild(channelListItem);
       break;
-    case 'SCTV':
+    case 'HTV':
       myList4.appendChild(channelListItem);
       break;
-    case 'DP':
+    case 'SCTV':
       myList5.appendChild(channelListItem);
       break;
+    case 'DP':
+      myList6.appendChild(channelListItem);
+      break;
     case 'QT':
+      myList7.appendChild(channelListItem);
+      break;
+	case 'radio':
       myList8.appendChild(channelListItem);
       break;
-    case '港澳台':
+	case '123':
+      myList9.appendChild(channelListItem);
+      break;
+    case 'link':
       myList10.appendChild(channelListItem);
       break;
     default:
