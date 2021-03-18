@@ -1573,6 +1573,12 @@ function initialize() {
   myList5.textContent = '';
   myList5.classList.add('myList5');
   myList5.classList.add('hidden');
+  myList6.textContent = '';
+  myList6.classList.add('myList6');
+  myList6.classList.add('hidden');
+  myList7.textContent = '';
+  myList7.classList.add('myList7');
+  myList7.classList.add('hidden');
   myList8.textContent = '';
   myList8.classList.add('myList8');
   myList8.classList.add('hidden');
