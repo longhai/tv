@@ -1591,7 +1591,7 @@ function initialize() {
   myList9.textContent = '';
   myList9.classList.add('myList9');
   myList9.classList.add('hidden');
-  myList10.textContent = '';
+
   myList10.classList.add('myList10');
   myList10.classList.add('hidden');
 
