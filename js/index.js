@@ -929,7 +929,7 @@ function appendList(channel,appendSourceName,sourceLane) {
     channelListItem.setAttribute('data-rate',channel.chnl_rate);
   }
   channelListItem.appendChild(channelListText);
-  if (channel.chnl_cat.indexOf('高清') === -1) {
+  if (channel.chnl_cat.indexOf('HD') === -1) {
     const channelSup = document.createElement('sub');
     channelSup.textContent = sourceLane;
     channelListItem.appendChild(channelSup);
@@ -939,24 +939,30 @@ function appendList(channel,appendSourceName,sourceLane) {
       myList1.appendChild(channelListItem);
       break;
     case 'VTC':
-      myList1a.appendChild(channelListItem);
-      break;
-    case 'VTCcab':
       myList2.appendChild(channelListItem);
       break;
-    case 'HTV':
+    case 'VTCcab':
       myList3.appendChild(channelListItem);
       break;
-    case 'SCTV':
+    case 'HTV':
       myList4.appendChild(channelListItem);
       break;
-    case 'DP':
+    case 'SCTV':
       myList5.appendChild(channelListItem);
       break;
+    case 'DP':
+      myList6.appendChild(channelListItem);
+      break;
     case 'QT':
+      myList7.appendChild(channelListItem);
+      break;
+	case 'radio':
       myList8.appendChild(channelListItem);
       break;
-    case '港澳台':
+	case '123':
+      myList9.appendChild(channelListItem);
+      break;
+    case 'link':
       myList10.appendChild(channelListItem);
       break;
     default:
@@ -1514,14 +1520,15 @@ const categoriesField = document.querySelector('.categories');
 const featureBtn = document.querySelector('.categories ul li:nth-child(1)');
 const switchBtn = document.querySelector('.switch');
 const myList1 = document.querySelector('.channels ul:nth-child(1)');
-const myList1a = document.querySelector('.channels ul:nth-child(2)');
-const myList2 = document.querySelector('.channels ul:nth-child(3)');
-const myList3 = document.querySelector('.channels ul:nth-child(4)');
-const myList4 = document.querySelector('.channels ul:nth-child(5)');
-const myList5 = document.querySelector('.channels ul:nth-child(6)');
-const myList8 = document.querySelector('.channels ul:nth-child(7)');
-const myList9 = document.querySelector('.channels ul:nth-child(8)');
-const myList10 = document.querySelector('.channels ul:nth-child(9)');
+const myList2 = document.querySelector('.channels ul:nth-child(2)');
+const myList3 = document.querySelector('.channels ul:nth-child(3)');
+const myList4 = document.querySelector('.channels ul:nth-child(4)');
+const myList5 = document.querySelector('.channels ul:nth-child(5)');
+const myList6 = document.querySelector('.channels ul:nth-child(6)');
+const myList7 = document.querySelector('.channels ul:nth-child(7)');
+const myList8 = document.querySelector('.channels ul:nth-child(8)');
+const myList9 = document.querySelector('.channels ul:nth-child(9)');
+const myList10 = document.querySelector('.channels ul:nth-child(10)');
 const linkInputField = document.querySelector('.linkInput');
 const alertField = document.querySelector('.alert');
 const upComingField = document.querySelector('.upComing');
@@ -1559,9 +1566,6 @@ reqData(localJson).then(response => {
 function initialize() {
   myList1.textContent = '';
   myList1.classList.add('myList1');
-  myList1a.textContent = '';
-  myList1a.classList.add('myList1a');
-  myList1a.classList.add('hidden');
   myList2.textContent = '';
   myList2.classList.add('myList2');
   myList2.classList.add('hidden');
@@ -1574,9 +1578,16 @@ function initialize() {
   myList5.textContent = '';
   myList5.classList.add('myList5');
   myList5.classList.add('hidden');
+  myList6.textContent = '';
+  myList6.classList.add('myList6');
+  myList6.classList.add('hidden');
+  myList7.textContent = '';
+  myList7.classList.add('myList7');
+  myList7.classList.add('hidden');
   myList8.textContent = '';
   myList8.classList.add('myList8');
   myList8.classList.add('hidden');
+  myList9.textContent = '';
   myList9.classList.add('myList9');
   myList9.classList.add('hidden');
   myList10.textContent = '';
