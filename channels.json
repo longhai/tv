@@ -51,27 +51,59 @@
       },
       "channels": [
         {
-          "chnl_name": "凤凰卫视资讯高清",
-          "chnl_id": "fhwszx",
+          "chnl_name": "HBO",
+          "chnl_id": "HBO",
           "chnl_cat": "港澳台",
-          "url": "http://qlive.fengshows.cn/live/8222pin7.flv",
-          "schedule": "fhwszx",
+          "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/index.m3u8",
+          "schedule": "HBO",
           "overlay": "on"
         },
         {
-          "chnl_name": "凤凰卫视中文高清",
-          "chnl_id": "fhwszw",
+          "chnl_name": "HBO HITS",
+          "chnl_id": "HBO HITS",
           "chnl_cat": "港澳台",
-          "url": "http://qlive.fengshows.cn/live/8222pcc7.flv",
-          "schedule": "fhwszw",
+          "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/HITS/index.m3u8",
+          "schedule": "HBO HITS",
+          "overlay": "on"
+        },
+		{
+          "chnl_name": "HBO FAMILY",
+          "chnl_id": "HBO FAMILY",
+          "chnl_cat": "港澳台",
+          "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8",
+          "schedule": "HBO FAMILY",
+          "overlay": "on"
+        },
+		{
+          "chnl_name": "HBO SIGNATURE",
+          "chnl_id": "HBO SIGNATURE",
+          "chnl_cat": "港澳台",
+          "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/SIG/index.m3u8",
+          "schedule": "HBO SIGNATURE",
+          "overlay": "on"
+        },
+		{
+          "chnl_name": "Red By HBO",
+          "chnl_id": "Red By HBO",
+          "chnl_cat": "港澳台",
+          "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/RED/index.m3u8",
+          "schedule": "Red By HBO",
+          "overlay": "on"
+        },
+		{
+          "chnl_name": "CINEMAX",
+          "chnl_id": "CINEMAX",
+          "chnl_cat": "港澳台",
+          "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/MAX/index.m3u8",
+          "schedule": "CINEMAX",
           "overlay": "on"
         },
         {
-          "chnl_name": "凤凰卫视香港台高清",
-          "chnl_id": "fhwsxg",
+          "chnl_name": "VTV1 HD",
+          "chnl_id": "VTV1",
           "chnl_cat": "港澳台",
-          "url": "http://qlive.fengshows.cn/live/8222phk7.flv",
-          "schedule": "fhwsxg",
+          "url": "https://livecdn.fptplay.net/hda/vtv1hd_hls.smil/playlist.m3u8",
+          "schedule": "VTV1",
           "overlay": "on"
         }
       ]
