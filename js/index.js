@@ -200,10 +200,8 @@ function videojsLoad(sourceOverlay,channel) {
 
   let contentType,techOrder,pictureInPictureToggle,credentials = false,playerOptions,player;
 
-  if (hlsVideoUrl.indexOf('cdn4.epub.fun') !== -1) {
-    hlsVideoUrl = hlsVideoUrl.replace('https://cdn4.epub.fun','http://hbo.epub.fun');
-  } else if (hlsVideoUrl.indexOf('cdn5.epub.fun') !== -1) {
-    hlsVideoUrl = hlsVideoUrl.replace('cdn5.epub.fun','stream5.epub.fun');
+  if (hlsVideoUrl.indexOf('cdn2.epub.fun') !== -1) {
+    hlsVideoUrl = hlsVideoUrl.replace('https://cdn2.epub.fun','http://hbo.epub.fun');
   }
 
   if (hlsVideoUrl.indexOf('epub.fun') !== -1)   {
@@ -240,12 +238,12 @@ function videojsLoad(sourceOverlay,channel) {
     responsive: true,
     userActions: {hotkeys:true},
     html5: {
-      vhs: {
-        withCredentials: credentials,
-        overrideNative: true
-      },
-      nativeVideoTracks: false,
-      nativeAudioTracks: false
+        vhs: {
+            withCredentials: credentials,
+            overrideNative: true
+        },
+        nativeVideoTracks: false,
+        nativeAudioTracks: false
     },
     flvjs: {
       mediaDataSource: {
@@ -256,8 +254,8 @@ function videojsLoad(sourceOverlay,channel) {
     },
     sources: [
       {
-        src: hlsVideoUrl,
-        type: contentType
+         src: hlsVideoUrl,
+         type: contentType
       }
     ]
     //controlBar: {
@@ -929,40 +927,34 @@ function appendList(channel,appendSourceName,sourceLane) {
     channelListItem.setAttribute('data-rate',channel.chnl_rate);
   }
   channelListItem.appendChild(channelListText);
-  if (channel.chnl_cat.indexOf('HD') === -1) {
+  if (channel.chnl_cat.indexOf('高清') === -1) {
     const channelSup = document.createElement('sub');
     channelSup.textContent = sourceLane;
     channelListItem.appendChild(channelSup);
   }
   switch (channel.chnl_cat) {
-    case 'VTV':
+    case '高清电信':
       myList1.appendChild(channelListItem);
       break;
-    case 'VTC':
+    case '高清联通':
+      myList1a.appendChild(channelListItem);
+      break;
+    case '标清':
       myList2.appendChild(channelListItem);
       break;
-    case 'VTCcab':
+    case '央视':
       myList3.appendChild(channelListItem);
       break;
-    case 'HTV':
+    case '卫视':
       myList4.appendChild(channelListItem);
       break;
-    case 'SCTV':
+    case '地方':
       myList5.appendChild(channelListItem);
       break;
-    case 'DP':
-      myList6.appendChild(channelListItem);
-      break;
-    case 'QT':
-      myList7.appendChild(channelListItem);
-      break;
-	case 'radio':
+    case '专业':
       myList8.appendChild(channelListItem);
       break;
-	case '123':
-      myList9.appendChild(channelListItem);
-      break;
-    case 'link':
+    case '港澳台':
       myList10.appendChild(channelListItem);
       break;
     default:
@@ -1520,20 +1512,20 @@ const categoriesField = document.querySelector('.categories');
 const featureBtn = document.querySelector('.categories ul li:nth-child(1)');
 const switchBtn = document.querySelector('.switch');
 const myList1 = document.querySelector('.channels ul:nth-child(1)');
-const myList2 = document.querySelector('.channels ul:nth-child(2)');
-const myList3 = document.querySelector('.channels ul:nth-child(3)');
-const myList4 = document.querySelector('.channels ul:nth-child(4)');
-const myList5 = document.querySelector('.channels ul:nth-child(5)');
-const myList6 = document.querySelector('.channels ul:nth-child(6)');
-const myList7 = document.querySelector('.channels ul:nth-child(7)');
-const myList8 = document.querySelector('.channels ul:nth-child(8)');
-const myList9 = document.querySelector('.channels ul:nth-child(9)');
-const myList10 = document.querySelector('.channels ul:nth-child(10)');
+const myList1a = document.querySelector('.channels ul:nth-child(2)');
+const myList2 = document.querySelector('.channels ul:nth-child(3)');
+const myList3 = document.querySelector('.channels ul:nth-child(4)');
+const myList4 = document.querySelector('.channels ul:nth-child(5)');
+const myList5 = document.querySelector('.channels ul:nth-child(6)');
+const myList8 = document.querySelector('.channels ul:nth-child(7)');
+const myList9 = document.querySelector('.channels ul:nth-child(8)');
+const myList10 = document.querySelector('.channels ul:nth-child(9)');
 const linkInputField = document.querySelector('.linkInput');
 const alertField = document.querySelector('.alert');
 const upComingField = document.querySelector('.upComing');
 const sliderField = document.querySelector('.js_slider');
 const scheduleField = document.querySelector('.slides');
+const img = document.getElementById('my-screenshot');
 
 let liveui = true;
 /*if (videojs.browser.IS_ANDROID || videojs.browser.IS_IOS) {
@@ -1566,7 +1558,9 @@ reqData(localJson).then(response => {
 function initialize() {
   myList1.textContent = '';
   myList1.classList.add('myList1');
-  myList1.classList.add('hidden');
+  myList1a.textContent = '';
+  myList1a.classList.add('myList1a');
+  myList1a.classList.add('hidden');
   myList2.textContent = '';
   myList2.classList.add('myList2');
   myList2.classList.add('hidden');
@@ -1579,19 +1573,12 @@ function initialize() {
   myList5.textContent = '';
   myList5.classList.add('myList5');
   myList5.classList.add('hidden');
-  myList6.textContent = '';
-  myList6.classList.add('myList6');
-  myList6.classList.add('hidden');
-  myList7.textContent = '';
-  myList7.classList.add('myList7');
-  myList7.classList.add('hidden');
   myList8.textContent = '';
   myList8.classList.add('myList8');
   myList8.classList.add('hidden');
-  myList9.textContent = '';
   myList9.classList.add('myList9');
   myList9.classList.add('hidden');
-
+  myList10.textContent = '';
   myList10.classList.add('myList10');
   myList10.classList.add('hidden');
 
@@ -1653,6 +1640,6 @@ if (localStorage.getItem('dark') === '1'){
 }
 
 const controller = new ScrollMagic.Controller();
-const scene = new ScrollMagic.Scene({offset: 50})
-                  .setPin(".videoField")
-                  .addTo(controller);
+const scene = new ScrollMagic.Scene({triggerElement: '.videoContainer', triggerHook: 'onLeave'})
+                .setPin('.videoField')
+                .addTo(controller);
