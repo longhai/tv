@@ -38,7 +38,56 @@
     },
     {
       "name": "a2",
-      "json": "http://hbo.epub.fun/channels"
+      "channels": [
+        {
+          "chnl_name": "香港开电视",
+          "chnl_id": "hkopen",
+          "chnl_pid": 3128,
+          "chnl_cat": "港澳台",
+          "url": "https://cdn2.epub.fun/live/hkopen/SoeaiRVr.m3u8",
+          "schedule": "hkopen"
+        },
+        {
+          "chnl_name": "tvb 翡翠台",
+          "chnl_id": "tvbhk_jade",
+          "chnl_pid": 3211,
+          "chnl_cat": "港澳台",
+          "url": "https://cdn2.epub.fun/live/tvbhk_jade/CWcSvlFr.m3u8",
+          "schedule": "tvbhk_jade"
+        },
+        {
+          "chnl_name": "tvb j2",
+          "chnl_id": "tvbhk_j2",
+          "chnl_pid": 3295,
+          "chnl_cat": "港澳台",
+          "url": "https://cdn2.epub.fun/live/tvbhk_j2/maHYIhSZ.m3u8",
+          "schedule": "tvbhk_j2"
+        },
+        {
+          "chnl_name": "Channel [V] 中国",
+          "chnl_id": "my_channelvchina",
+          "chnl_pid": 3378,
+          "chnl_cat": "港澳台",
+          "url": "https://cdn2.epub.fun/live/my_channelvchina/tXYSDSdt.m3u8",
+          "schedule": "my_channelvchina"
+        },
+        {
+          "chnl_name": "HBO HD 台湾",
+          "chnl_id": "hbohd",
+          "chnl_pid": 3461,
+          "chnl_cat": "港澳台",
+          "url": "https://cdn2.epub.fun/live/hbohd/TyGaMPqy.m3u8",
+          "schedule": "hbohd"
+        },
+        {
+          "chnl_name": "hbo hits 台湾",
+          "chnl_id": "hits",
+          "chnl_pid": 3544,
+          "chnl_cat": "港澳台",
+          "url": "https://cdn2.epub.fun/live/hits/bxZOtwCa.m3u8",
+          "schedule": "hits"
+        }
+      ]
     },
     {
       "name": "a3",
