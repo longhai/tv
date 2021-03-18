@@ -1,48 +1,6 @@
 {
   "ret": 0,
-  "data": [
-    {
-      "overlay": [
-        {
-          "force": 0,
-          "switch": "on",
-          "reverse": 0,
-          "height": 45,
-          "width": 21,
-          "margin_left": 29,
-          "margin_top": -27,
-          "height_fullscreen": 50,
-          "width_fullscreen": 21,
-          "margin_left_fullscreen": 29,
-          "margin_top_fullscreen": -50
-        },
-        {
-          "force": 0,
-          "switch": "off",
-          "reverse": 0,
-          "height": 25,
-          "width": 10,
-          "margin_left": -47,
-          "margin_top": 11,
-          "height_fullscreen": 25,
-          "width_fullscreen": 10,
-          "margin_left_fullscreen": -47,
-          "margin_top_fullscreen": 20
-        },
-        {
-          "force": 0,
-          "switch": "off",
-          "reverse": 0,
-          "height": 6,
-          "width": 55,
-          "margin_left": -28,
-          "margin_top": -17,
-          "height_fullscreen": 6,
-          "width_fullscreen": 55,
-          "margin_left_fullscreen": -28,
-          "margin_top_fullscreen": -30
-        }
-      ],
+
       "name": "hbo",
       "feature": {
         "source_name": "a1",
