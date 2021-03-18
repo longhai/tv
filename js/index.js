@@ -935,25 +935,25 @@ function appendList(channel,appendSourceName,sourceLane) {
     channelListItem.appendChild(channelSup);
   }
   switch (channel.chnl_cat) {
-    case '高清电信':
+    case 'VTV':
       myList1.appendChild(channelListItem);
       break;
-    case '高清联通':
+    case 'VTC':
       myList1a.appendChild(channelListItem);
       break;
-    case '标清':
+    case 'VTCcab':
       myList2.appendChild(channelListItem);
       break;
-    case '央视':
+    case 'HTV':
       myList3.appendChild(channelListItem);
       break;
-    case '卫视':
+    case 'SCTV':
       myList4.appendChild(channelListItem);
       break;
-    case '地方':
+    case 'DP':
       myList5.appendChild(channelListItem);
       break;
-    case '专业':
+    case 'QT':
       myList8.appendChild(channelListItem);
       break;
     case '港澳台':
