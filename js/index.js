@@ -1566,6 +1566,7 @@ reqData(localJson).then(response => {
 function initialize() {
   myList1.textContent = '';
   myList1.classList.add('myList1');
+  myList1.classList.add('hidden');
   myList2.textContent = '';
   myList2.classList.add('myList2');
   myList2.classList.add('hidden');
