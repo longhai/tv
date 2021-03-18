@@ -935,28 +935,28 @@ function appendList(channel,appendSourceName,sourceLane) {
     channelListItem.appendChild(channelSup);
   }
   switch (channel.chnl_cat) {
-    case '高清电信':
+    case 'HD Telecom':
       myList1.appendChild(channelListItem);
       break;
-    case '高清联通':
+    case 'HD Unicom':
       myList1a.appendChild(channelListItem);
       break;
-    case '标清':
+    case 'SD':
       myList2.appendChild(channelListItem);
       break;
-    case '央视':
+    case 'Camera quan sát':
       myList3.appendChild(channelListItem);
       break;
-    case '卫视':
+    case 'Truyền hình vệ tinh':
       myList4.appendChild(channelListItem);
       break;
-    case '地方':
+    case 'địa phương':
       myList5.appendChild(channelListItem);
       break;
-    case '专业':
+    case 'nghề nghiệp':
       myList8.appendChild(channelListItem);
       break;
-    case '港澳台':
+    case 'Link':
       myList10.appendChild(channelListItem);
       break;
     default:
