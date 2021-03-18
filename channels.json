@@ -52,58 +52,58 @@
       "channels": [
         {
           "chnl_name": "HBO",
-          "chnl_id": "fhwszx",
+          "chnl_id": "HBO",
           "chnl_cat": "港澳台",
           "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/HBO/index.m3u8",
-          "schedule": "fhwszx",
+          "schedule": "HBO",
           "overlay": "on"
         },
         {
           "chnl_name": "HBO HITS",
-          "chnl_id": "fhwszw",
+          "chnl_id": "HBO HITS",
           "chnl_cat": "港澳台",
           "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/HITS/index.m3u8",
-          "schedule": "fhwszw",
+          "schedule": "HBO HITS",
           "overlay": "on"
         },
 		{
           "chnl_name": "HBO FAMILY",
-          "chnl_id": "fhwszw",
+          "chnl_id": "HBO FAMILY",
           "chnl_cat": "港澳台",
           "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/FAMILY/index.m3u8",
-          "schedule": "fhwszw",
+          "schedule": "HBO FAMILY",
           "overlay": "on"
         },
 		{
           "chnl_name": "HBO SIGNATURE",
-          "chnl_id": "fhwszw",
+          "chnl_id": "HBO SIGNATURE",
           "chnl_cat": "港澳台",
           "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/SIG/index.m3u8",
-          "schedule": "fhwszw",
+          "schedule": "HBO SIGNATURE",
           "overlay": "on"
         },
 		{
           "chnl_name": "Red By HBO",
-          "chnl_id": "fhwszw",
+          "chnl_id": "Red By HBO",
           "chnl_cat": "港澳台",
           "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/RED/index.m3u8",
-          "schedule": "fhwszw",
+          "schedule": "Red By HBO",
           "overlay": "on"
         },
 		{
           "chnl_name": "CINEMAX",
-          "chnl_id": "fhwszw",
+          "chnl_id": "CINEMAX",
           "chnl_cat": "港澳台",
           "url": "https://liveorigin01.hbogoasia.com:8443/origin/live/main/MAX/index.m3u8",
-          "schedule": "fhwszw",
+          "schedule": "CINEMAX",
           "overlay": "on"
         },
         {
           "chnl_name": "VTV1 HD",
-          "chnl_id": "fhwsxg",
+          "chnl_id": "VTV1",
           "chnl_cat": "港澳台",
           "url": "https://livecdn.fptplay.net/hda/vtv1hd_hls.smil/playlist.m3u8",
-          "schedule": "fhwsxg",
+          "schedule": "VTV1",
           "overlay": "on"
         }
       ]
